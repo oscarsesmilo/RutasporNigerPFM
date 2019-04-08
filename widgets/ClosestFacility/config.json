@@ -1,0 +1,47 @@
+{
+    "facilities": {
+        "url" : "https://localhost/server/rest/services/PFM_ClosestFacility/PFM_ClosestFacilities/MapServer/10"
+    },
+    "closestFacilitySvc": {
+        "url" : "https://localhost/server/rest/services/PFM_ClosestFacility/PFM_ClosestFacilities/NAServer/Closest%20Facility"
+    },
+    "symbology" : {
+        "routeZOrderAttrName" : "FacilityRank",
+        "routeRenderer" : {
+            "type" : "uniqueValue",
+            "field1": "FacilityRank",
+            "defaultSymbol" : {
+                "color": [0,0,0,255],
+                "style": "esriSLSSolid",
+                "width": 2
+            },
+            "uniqueValueInfos": [
+                {
+                    "value" : 1, "type" : "esriSLS", "style" : "esriSLSSolid",
+                    "sym" : {"color" : [26,0,65,255], "width" : 1}
+                },
+                {
+                    "value" : 2, "type" : "esriSLS", "style" : "esriSLSSolid",
+                    "sym" : {"color" : [166,217,0,255], "width" : 3}
+                },
+                {
+                    "value" : 3, "type" : "esriSLS", "style" : "esriSLSSolid",
+                    "sym" : {"color" : [0,174,97,255], "width" : 5}
+                },
+                {
+                    "value" : 4, "type" : "esriSLS", "style" : "esriSLSSolid",
+                    "sym" : {"color" : [215,0,0,255], "width" : 7}
+                },
+                {
+                    "value" : 5, "type" : "esriSLS", "style" : "esriSLSSolid",
+                    "sym" : {"color" : [0,0,228,255], "width" : 9}
+                }
+            ]
+        },
+        "barrierSymbol" : {"type" : "esriSLS", "style" : "esriSLSSolid", "color" : [170,1,1,255], "width" : 6},
+        "eventSymbol" : {"size" : 10, "type" : "esriSMS", "style" : "esriSMSDiamond", "color" : [238,114,3,255],
+                            "outline" : {"color" : [1,1,1,255], "width" : 0}
+        },
+        "animateRoutesDuration" : 4000
+    }
+}

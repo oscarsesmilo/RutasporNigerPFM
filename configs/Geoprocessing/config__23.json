@@ -1,0 +1,170 @@
+{
+  "name": "Model7",
+  "displayName": "Rutas",
+  "description": "Rutas en Niger",
+  "category": "",
+  "helpUrl": "https://localhost/server/rest/directories/arcgisoutput/PFMRutas/PFMRutas_GPServer/PFMRutas_PFMRutas/Model7.htm",
+  "serverInfo": {
+    "currentVersion": 10.6,
+    "url": "https://localhost/server/rest/services/PFMRutas/PFMRutas/GPServer/",
+    "hasResultMapServer": true,
+    "resultMapServerName": "PFMRutas/PFMRutas",
+    "supportsUpload": false
+  },
+  "useResultMapServer": true,
+  "taskUrl": "https://localhost/server/rest/services/PFMRutas/PFMRutas/GPServer/Rutas",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "CentroSaludDiffa_WGS84_UTM33N",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Capa de entrada",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PAYS",
+            "type": "esriFieldTypeString",
+            "alias": "PAYS",
+            "length": 254
+          },
+          {
+            "name": "REGION",
+            "type": "esriFieldTypeString",
+            "alias": "REGION",
+            "length": 254
+          },
+          {
+            "name": "DISTRICT",
+            "type": "esriFieldTypeString",
+            "alias": "DISTRICT",
+            "length": 254
+          },
+          {
+            "name": "COMMUNE",
+            "type": "esriFieldTypeString",
+            "alias": "COMMUNE",
+            "length": 254
+          },
+          {
+            "name": "NOM_DE_LA_",
+            "type": "esriFieldTypeString",
+            "alias": "NOM_DE_LA_",
+            "length": 254
+          },
+          {
+            "name": "Latitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Latitud"
+          },
+          {
+            "name": "Longuitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Longuitud"
+          },
+          {
+            "name": "Tratamient",
+            "type": "esriFieldTypeString",
+            "alias": "Tratamient",
+            "length": 254
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "CentroSaludDiffa_WGS84_UTM33N",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "CentroSaludDiffa_WGS84_UTM33N"
+    },
+    {
+      "name": "Impedance_Attribute",
+      "dataType": "GPString",
+      "description": "Atributo de coste",
+      "defaultValue": "Tiempo_Conducción",
+      "category": "",
+      "choiceList": [
+        "Distancia",
+        "Meters",
+        "Minutes",
+        "Pedestrian",
+        "Tiempo_Conducción"
+      ],
+      "label": "Impedance Attribute",
+      "visible": true,
+      "required": true,
+      "tooltip": "Impedance Attribute"
+    },
+    {
+      "name": "Preserve_Ordering_of_Stops",
+      "dataType": "GPString",
+      "description": "Preservar el orden de las paradas",
+      "defaultValue": "PRESERVE_NONE",
+      "category": "",
+      "choiceList": [
+        "PRESERVE_BOTH",
+        "PRESERVE_NONE",
+        "PRESERVE_FIRST",
+        "PRESERVE_LAST"
+      ],
+      "label": "Preserve Ordering of Stops",
+      "visible": true,
+      "required": false,
+      "tooltip": "Preserve Ordering of Stops"
+    },
+    {
+      "name": "Reorder_Stops_to_Find_Optimal_Route",
+      "dataType": "GPBoolean",
+      "description": "Reordenar las paradas",
+      "defaultValue": true,
+      "category": "",
+      "label": "Reorder Stops to Find Optimal Route",
+      "visible": true,
+      "required": false,
+      "tooltip": "Reorder Stops to Find Optimal Route"
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Route__3_",
+      "dataType": "GPString",
+      "description": "",
+      "defaultValue": null,
+      "category": "",
+      "label": "Route (3)",
+      "visible": true,
+      "required": false,
+      "tooltip": "Route (3)",
+      "ignore": false,
+      "layerInvisible": true
+    },
+    {
+      "name": "PFMRutas/PFMRutas",
+      "label": "PFMRutas/PFMRutas",
+      "tooltip": "PFMRutas/PFMRutas",
+      "dataType": "MapServiceLayer",
+      "layerNames": [
+        "Rutas"
+      ],
+      "visible": true,
+      "required": ""
+    }
+  ],
+  "shareResults": false,
+  "layerOrder": [
+    "CentroSaludDiffa_WGS84_UTM33N"
+  ],
+  "showExportButton": false
+}

@@ -1,0 +1,212 @@
+{
+  "name": "Model5",
+  "displayName": "ThiessenHospitales2",
+  "description": "Poligonos de thiessen en las administraciones de N'Guigmi",
+  "category": "",
+  "helpUrl": "https://localhost/server/rest/directories/arcgisoutput/PFMPoligonosThiessen/PoligonosThiessenPoblacion3_GPServer/PFMPoligonosThiessen_PoligonosThiessenPoblacion3/Model5.htm",
+  "serverInfo": {
+    "currentVersion": 10.6,
+    "url": "https://localhost/server/rest/services/PFMPoligonosThiessen/PoligonosThiessenPoblacion3/GPServer/",
+    "hasResultMapServer": false,
+    "resultMapServerName": "",
+    "supportsUpload": false
+  },
+  "useResultMapServer": false,
+  "taskUrl": "https://localhost/server/rest/services/PFMPoligonosThiessen/PoligonosThiessenPoblacion3/GPServer/ThiessenHospitales2",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Entidades_Entrada",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Capa de entrada",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PAYS",
+            "type": "esriFieldTypeString",
+            "alias": "PAYS",
+            "length": 254
+          },
+          {
+            "name": "REGION",
+            "type": "esriFieldTypeString",
+            "alias": "REGION",
+            "length": 254
+          },
+          {
+            "name": "DISTRICT",
+            "type": "esriFieldTypeString",
+            "alias": "DISTRICT",
+            "length": 254
+          },
+          {
+            "name": "COMMUNE",
+            "type": "esriFieldTypeString",
+            "alias": "COMMUNE",
+            "length": 254
+          },
+          {
+            "name": "NOM_DE_LA_",
+            "type": "esriFieldTypeString",
+            "alias": "NOM_DE_LA_",
+            "length": 254
+          },
+          {
+            "name": "Latitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Latitud"
+          },
+          {
+            "name": "Longuitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Longuitud"
+          },
+          {
+            "name": "Tratamient",
+            "type": "esriFieldTypeString",
+            "alias": "Tratamient",
+            "length": 254
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Entidades_Entrada",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "Entidades_Entrada"
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Crenas_Nguigmi_WGS84_UTM33N_3",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Capa de salida",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+            "type": "esriFieldTypeInteger",
+            "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1"
+          },
+          {
+            "name": "SUM_Population",
+            "type": "esriFieldTypeDouble",
+            "alias": "SUM_Population"
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Crenas_Nguigmi_WGS84_UTM33N_3",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "Crenas_Nguigmi_WGS84_UTM33N_3",
+      "renderer": {
+        "type": "simple",
+        "symbol": {
+          "color": [
+            155,
+            187,
+            89,
+            128
+          ],
+          "outline": {
+            "color": [
+              115,
+              140,
+              61,
+              255
+            ],
+            "width": 1.5,
+            "type": "esriSLS",
+            "style": "esriSLSSolid"
+          },
+          "type": "esriSFS",
+          "style": "esriSFSSolid"
+        }
+      },
+      "popup": {
+        "title": "",
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "alias": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "visible": true
+          },
+          {
+            "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+            "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+            "type": "esriFieldTypeInteger",
+            "visible": true
+          },
+          {
+            "name": "SUM_Population",
+            "alias": "SUM_Population",
+            "type": "esriFieldTypeDouble",
+            "visible": true
+          },
+          {
+            "name": "Shape_Length",
+            "alias": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "visible": true
+          },
+          {
+            "name": "Shape_Area",
+            "alias": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "visible": true
+          }
+        ],
+        "enablePopup": true
+      },
+      "useDynamicSchema": false,
+      "ignore": false,
+      "layerInvisible": false
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "Crenas_Nguigmi_WGS84_UTM33N_3",
+    "Entidades_Entrada"
+  ],
+  "showExportButton": false
+}

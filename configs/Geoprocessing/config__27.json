@@ -1,0 +1,190 @@
+{
+  "name": "Model2222",
+  "displayName": "UnionGeoprocesamientosServiceArea",
+  "description": "Union Geoprocesamientos con ServiceArea para hallar la población ",
+  "category": "",
+  "helpUrl": "https://localhost/server/rest/directories/arcgisoutput/UnionGeoprocesos/UnionGeoprocesamiento4_GPServer/UnionGeoprocesos_UnionGeoprocesamiento4/Model2222.htm",
+  "serverInfo": {
+    "currentVersion": 10.6,
+    "url": "https://localhost/server/rest/services/UnionGeoprocesos/UnionGeoprocesamiento4/GPServer/",
+    "hasResultMapServer": true,
+    "resultMapServerName": "UnionGeoprocesos/UnionGeoprocesamiento4",
+    "supportsUpload": false
+  },
+  "useResultMapServer": true,
+  "taskUrl": "https://localhost/server/rest/services/UnionGeoprocesos/UnionGeoprocesamiento4/GPServer/UnionGeoprocesamientosServiceArea",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Input_Features",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Entidad de entrada, tiene que ser la misma que en el service area",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PAYS",
+            "type": "esriFieldTypeString",
+            "alias": "PAYS",
+            "length": 254
+          },
+          {
+            "name": "REGION",
+            "type": "esriFieldTypeString",
+            "alias": "REGION",
+            "length": 254
+          },
+          {
+            "name": "DISTRICT",
+            "type": "esriFieldTypeString",
+            "alias": "DISTRICT",
+            "length": 254
+          },
+          {
+            "name": "COMMUNE",
+            "type": "esriFieldTypeString",
+            "alias": "COMMUNE",
+            "length": 254
+          },
+          {
+            "name": "NOM_DE_LA_",
+            "type": "esriFieldTypeString",
+            "alias": "NOM_DE_LA_",
+            "length": 254
+          },
+          {
+            "name": "Latitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Latitud"
+          },
+          {
+            "name": "Longuitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Longuitud"
+          },
+          {
+            "name": "Tratamient",
+            "type": "esriFieldTypeString",
+            "alias": "Tratamient",
+            "length": 254
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Input_Features",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "Input_Features"
+    },
+    {
+      "name": "Impedance_Attribute",
+      "dataType": "GPString",
+      "description": "Atributo de coste",
+      "defaultValue": "Tiempo_Conducción",
+      "category": "",
+      "choiceList": [
+        "Distancia",
+        "Meters",
+        "Minutes",
+        "Pedestrian",
+        "Tiempo_Conducción"
+      ],
+      "label": "Impedance Attribute",
+      "visible": true,
+      "required": true
+    },
+    {
+      "name": "Minutes__Metres",
+      "dataType": "GPString",
+      "description": "Minutos o metros",
+      "defaultValue": "60",
+      "category": "",
+      "label": "Minutes/ Metres",
+      "visible": true,
+      "required": true
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Crenas_Nguigmi_WGS84_UTM33N_4",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "entidad de salida",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+            "type": "esriFieldTypeInteger",
+            "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1"
+          },
+          {
+            "name": "SUM_Population",
+            "type": "esriFieldTypeDouble",
+            "alias": "SUM_Population"
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Crenas_Nguigmi_WGS84_UTM33N_4",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers"
+    },
+    {
+      "name": "UnionGeoprocesos/UnionGeoprocesamiento4",
+      "label": "UnionGeoprocesos/UnionGeoprocesamiento4",
+      "tooltip": "UnionGeoprocesos/UnionGeoprocesamiento4",
+      "dataType": "MapServiceLayer",
+      "layerNames": [
+        "UnionGeoprocesamientosServiceArea",
+        "Crenas_Nguigmi_WGS84_UTM33N_4"
+      ],
+      "visible": true,
+      "required": "",
+      "defaultValue": null,
+      "ignore": false,
+      "layerInvisible": false
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "Crenas_Nguigmi_WGS84_UTM33N_4",
+    "Input_Features"
+  ],
+  "showExportButton": false
+}

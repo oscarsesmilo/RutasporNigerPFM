@@ -1,0 +1,110 @@
+{
+  "name": "Model8",
+  "displayName": "UnionGeoprocesamientosBuffer",
+  "description": "Calculo de población en buffer, uniendo las herramientas de buffer y poligonos de thiessen",
+  "category": "",
+  "helpUrl": "https://localhost/server/rest/directories/arcgisoutput/UnionGeoprocesamientoBuffer/UnionGeoprcesamientoBuffer2_GPServer/UnionGeoprocesamientoBuffer_UnionGeoprcesamientoBuffer2/Model8.htm",
+  "serverInfo": {
+    "currentVersion": 10.6,
+    "url": "https://localhost/server/rest/services/UnionGeoprocesamientoBuffer/UnionGeoprcesamientoBuffer2/GPServer/",
+    "hasResultMapServer": false,
+    "resultMapServerName": "",
+    "supportsUpload": false
+  },
+  "useResultMapServer": false,
+  "taskUrl": "https://localhost/server/rest/services/UnionGeoprocesamientoBuffer/UnionGeoprcesamientoBuffer2/GPServer/UnionGeoprocesamientosBuffer",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Input_features",
+      "dataType": "GPString",
+      "description": "Capa de entrada",
+      "defaultValue": "Crenas_Nguigmi_WGS84_UTM33N",
+      "category": "",
+      "choiceList": [
+        "Centinelas_NigerWGS54UTM33N2",
+        "Poblaciones_Diffa_WGS84_UTM33N",
+        "CasaSante_Nguigmi_WGS84UTM33N",
+        "Crenas_Nguigmi_WGS84_UTM33N",
+        "Niger_Red_ND_1_Junctions",
+        "CentroSaludDiffa_WGS84_UTM33N",
+        "AeropuertosPunto_WGS84_UTM33N",
+        "Carreterras_Niger_1",
+        "ResultadosBuffer",
+        "Administracion3_WGS84_33N"
+      ],
+      "label": "Input features",
+      "visible": true,
+      "required": true,
+      "tooltip": "Input features"
+    },
+    {
+      "name": "Distance__value_or_field_",
+      "dataType": "GPLinearUnit",
+      "description": "Distancia de la zona de interes",
+      "defaultValue": {
+        "distance": 20,
+        "units": "esriKilometers"
+      },
+      "category": "",
+      "label": "Distance [value or field]",
+      "visible": true,
+      "required": true,
+      "tooltip": "Distance [value or field]"
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Crenas_Nguigmi_WGS84_UTM33N_5",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Capa de salida del Buffer",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+            "type": "esriFieldTypeInteger",
+            "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1"
+          },
+          {
+            "name": "SUM_Population",
+            "type": "esriFieldTypeDouble",
+            "alias": "SUM_Population"
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Crenas_Nguigmi_WGS84_UTM33N_5",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers"
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "Crenas_Nguigmi_WGS84_UTM33N_5"
+  ],
+  "showExportButton": false
+}

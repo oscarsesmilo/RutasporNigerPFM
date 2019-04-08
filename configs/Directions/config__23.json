@@ -1,0 +1,38 @@
+{
+  "routeTaskUrl": "https://localhost/server/rest/services/PFM_Rutas/Carreteras_Niger_Rutas/NAServer/Route",
+  "travelModesUrl": "",
+  "trafficLayerUrl": "",
+  "routeOptions": {
+    "directionsLanguage": "es-es",
+    "directionsLengthUnits": "esriMeters",
+    "impedanceAttribute": ""
+  },
+  "geocoderOptions": {
+    "autoComplete": true,
+    "maxLocations": 3,
+    "minCharacters": 3,
+    "searchDelay": 350,
+    "arcgisGeocoder": false,
+    "geocoders": [
+      {
+        "url": "http://geocode.arcgis.com/arcgis/rest/services/World/GeocodeServer",
+        "placeholder": "Buscar dirección o lugar"
+      }
+    ]
+  },
+  "defaultLocations": [
+    "",
+    ""
+  ],
+  "barrierLayers": {
+    "pointLayers": [
+      ""
+    ],
+    "polylineLayers": [
+      ""
+    ],
+    "polygonLayers": [
+      ""
+    ]
+  }
+}

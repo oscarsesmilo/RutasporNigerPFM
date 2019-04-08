@@ -1,0 +1,570 @@
+{
+  "theme": {
+    "name": "MarinaTheme",
+    "styles": [
+      "default"
+    ],
+    "version": "2.11",
+    "sharedTheme": {
+      "useHeader": true,
+      "useLogo": false,
+      "isPortalSupport": true
+    },
+    "customStyles": {
+      "mainBackgroundColor": null
+    }
+  },
+  "portalUrl": "http://oscarsesmilo.maps.arcgis.com",
+  "appId": "",
+  "authorizedCrossOriginDomains": [],
+  "title": "Solucionadores Network Analyst por N'Guigmi",
+  "subtitle": "",
+  "keepAppState": true,
+  "logo": "images/logo.png",
+  "geometryService": "https://utility.arcgisonline.com/arcgis/rest/services/Geometry/GeometryServer",
+  "links": [
+    {
+      "label": "Conócenos",
+      "url": "https://oretana.maps.arcgis.com/apps/MapJournal/index.html?appid=d78aa4164354476599d5368a5ab920ef"
+    }
+  ],
+  "widgetOnScreen": {
+    "widgets": [
+      {
+        "uri": "themes/MarinaTheme/widgets/HeaderController/Widget",
+        "position": {
+          "left": 0,
+          "top": 0,
+          "right": 0,
+          "height": 60,
+          "relativeTo": "browser"
+        },
+        "version": "2.11",
+        "id": "themes_MarinaTheme_widgets_HeaderController_Widget_20",
+        "name": "HeaderController"
+      },
+      {
+        "uri": "widgets/Scalebar/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 25,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_Scalebar_Widget_21",
+        "name": "Scalebar"
+      },
+      {
+        "uri": "widgets/Coordinate/Widget",
+        "position": {
+          "left": 7,
+          "bottom": 5,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_Coordinate_Widget_22",
+        "name": "Coordinate"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 30,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_23",
+        "name": "Directions",
+        "version": "2.11",
+        "closeable": true,
+        "icon": "configs\\Directions\\icon__23.png",
+        "uri": "widgets/Directions/Widget",
+        "config": "configs/Directions/config__23.json",
+        "label": "Ruta más corta"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 80,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_24",
+        "version": "2.11",
+        "closeable": true,
+        "uri": "widgets/Geoprocessing/Widget",
+        "name": "Geoprocessing",
+        "label": "Área de servicio",
+        "icon": "configs\\Geoprocessing\\icon__24.png",
+        "config": "configs/Geoprocessing/config__24.json"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 130,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 1,
+        "id": "_25",
+        "version": "1.3",
+        "closeable": true,
+        "uri": "widgets/ClosestFacility/Widget",
+        "name": "ClosestFacility",
+        "IsController": false,
+        "config": "configs/ClosestFacility/config__25.json",
+        "label": "Incidente más cercano"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 180,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_26",
+        "name": "Geoprocessing",
+        "label": "Zona de influencia según polígonos Thiessen",
+        "version": "2.11",
+        "closeable": true,
+        "icon": "configs\\Geoprocessing\\icon__26.png",
+        "uri": "widgets/Geoprocessing/Widget",
+        "config": "configs/Geoprocessing/config__26.json"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 230,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_27",
+        "name": "Geoprocessing",
+        "label": "Área de Servicio según su población",
+        "version": "2.11",
+        "closeable": true,
+        "icon": "configs\\Geoprocessing\\icon__27.png",
+        "uri": "widgets/Geoprocessing/Widget",
+        "config": "configs/Geoprocessing/config__27.json"
+      },
+      {
+        "position": {
+          "left": 10,
+          "top": 280,
+          "relativeTo": "map"
+        },
+        "placeholderIndex": 2,
+        "id": "_28",
+        "name": "Geoprocessing",
+        "label": "Zona de influencia según su población",
+        "version": "2.11",
+        "closeable": true,
+        "icon": "configs\\Geoprocessing\\icon__28.png",
+        "uri": "widgets/Geoprocessing/Widget",
+        "config": "configs/Geoprocessing/config__28.json"
+      },
+      {
+        "uri": "widgets/OverviewMap/Widget",
+        "position": {
+          "right": 0,
+          "bottom": 0,
+          "zIndex": 1,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_OverviewMap_Widget_29",
+        "name": "OverviewMap"
+      },
+      {
+        "uri": "widgets/HomeButton/Widget",
+        "position": {
+          "right": 7,
+          "top": 98,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_HomeButton_Widget_30",
+        "name": "HomeButton"
+      },
+      {
+        "uri": "widgets/AttributeTable/Widget",
+        "version": "2.11",
+        "position": {
+          "relativeTo": "browser"
+        },
+        "id": "widgets_AttributeTable_Widget_31",
+        "name": "AttributeTable"
+      },
+      {
+        "uri": "widgets/Splash/Widget",
+        "visible": false,
+        "position": {
+          "relativeTo": "browser"
+        },
+        "version": "2.11",
+        "id": "widgets_Splash_Widget_32",
+        "name": "Splash"
+      },
+      {
+        "uri": "widgets/ZoomSlider/Widget",
+        "position": {
+          "top": 30,
+          "right": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_ZoomSlider_Widget_33",
+        "name": "ZoomSlider"
+      },
+      {
+        "uri": "widgets/ExtentNavigate/Widget",
+        "visible": false,
+        "position": {
+          "top": 190,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_ExtentNavigate_Widget_34",
+        "name": "ExtentNavigate"
+      },
+      {
+        "uri": "widgets/FullScreen/Widget",
+        "visible": false,
+        "position": {
+          "top": 150,
+          "left": 7,
+          "relativeTo": "map"
+        },
+        "version": "2.11",
+        "id": "widgets_FullScreen_Widget_35",
+        "name": "FullScreen"
+      }
+    ],
+    "panel": {
+      "uri": "jimu/OnScreenWidgetPanel",
+      "position": {
+        "relativeTo": "map"
+      }
+    }
+  },
+  "map": {
+    "3D": false,
+    "2D": true,
+    "position": {
+      "left": 0,
+      "top": 40,
+      "right": 0,
+      "bottom": 0
+    },
+    "itemId": "c852863f19f6446bb0d5d196696e7091",
+    "mapOptions": {},
+    "id": "map",
+    "portalUrl": "https://oscarsesmilo.maps.arcgis.com",
+    "mapRefreshInterval": {
+      "useWebMapRefreshInterval": true
+    }
+  },
+  "widgetPool": {
+    "panel": {
+      "uri": "themes/MarinaTheme/panels/FoldablePanel/Panel",
+      "position": {
+        "top": 5,
+        "right": 5,
+        "bottom": 5,
+        "zIndex": 5,
+        "relativeTo": "map"
+      }
+    },
+    "widgets": [
+      {
+        "uri": "widgets/Legend/Widget",
+        "version": "2.11",
+        "id": "widgets_Legend_Widget_18",
+        "name": "Legend",
+        "index": 2
+      },
+      {
+        "uri": "widgets/LayerList/Widget",
+        "version": "2.11",
+        "id": "widgets_LayerList_Widget_19",
+        "name": "LayerList",
+        "index": 3
+      },
+      {
+        "name": "eBasemapGallery",
+        "version": "2.8",
+        "icon": "configs\\eBasemapGallery\\icon_widgets_eBasemapGallery_Widget_36.png",
+        "uri": "widgets/eBasemapGallery/Widget",
+        "config": "configs/eBasemapGallery/config_widgets_eBasemapGallery_Widget_36.json",
+        "index": 4,
+        "id": "widgets_eBasemapGallery_Widget_36"
+      },
+      {
+        "name": "Bookmark",
+        "version": "2.11",
+        "icon": "configs\\Bookmark\\icon_widgets_Bookmark_Widget_37.png",
+        "uri": "widgets/Bookmark/Widget",
+        "config": "configs/Bookmark/config_widgets_Bookmark_Widget_37.json",
+        "index": 6,
+        "id": "widgets_Bookmark_Widget_37"
+      }
+    ],
+    "groups": []
+  },
+  "mobileLayout": {
+    "widgetOnScreen": {
+      "widgets": [
+        {
+          "uri": "themes/MarinaTheme/widgets/HeaderController/Widget",
+          "position": {
+            "left": 0,
+            "top": 0,
+            "right": 0,
+            "height": 60,
+            "relativeTo": "browser"
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/Scalebar/Widget",
+          "position": {
+            "left": 7,
+            "bottom": 40,
+            "relativeTo": "map"
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/Coordinate/Widget",
+          "position": {
+            "left": 7,
+            "bottom": 17,
+            "relativeTo": "map"
+          },
+          "version": "2.11"
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 30
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 80
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 130
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 180
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 230
+          }
+        },
+        {
+          "position": {
+            "left": 10,
+            "top": 280
+          }
+        },
+        {
+          "uri": "widgets/OverviewMap/Widget",
+          "position": {
+            "right": 0,
+            "bottom": 0,
+            "zIndex": 1
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/HomeButton/Widget",
+          "inPanel": false,
+          "position": {
+            "right": 7,
+            "top": 98
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/AttributeTable/Widget",
+          "version": "2.11",
+          "position": {
+            "relativeTo": "browser"
+          }
+        },
+        {
+          "uri": "widgets/Splash/Widget",
+          "visible": false,
+          "position": {
+            "relativeTo": "browser"
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/ZoomSlider/Widget",
+          "visible": true,
+          "position": {
+            "top": 30,
+            "right": 7
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/ExtentNavigate/Widget",
+          "visible": false,
+          "position": {
+            "top": 190,
+            "left": 7
+          },
+          "version": "2.11"
+        },
+        {
+          "uri": "widgets/FullScreen/Widget",
+          "visible": false,
+          "position": {
+            "top": 150,
+            "left": 7
+          },
+          "version": "2.11"
+        }
+      ]
+    },
+    "map": {
+      "position": {
+        "left": 0,
+        "top": 40,
+        "right": 0,
+        "bottom": 0
+      }
+    },
+    "widgetPool": {
+      "panel": {
+        "uri": "themes/MarinaTheme/panels/FoldablePanel/Panel",
+        "position": {
+          "top": 5,
+          "right": 5,
+          "bottom": 5,
+          "zIndex": 5
+        }
+      }
+    }
+  },
+  "loadingPage": {
+    "backgroundColor": "#ffffff",
+    "backgroundImage": {
+      "visible": true
+    },
+    "loadingGif": {
+      "visible": true,
+      "uri": "configs/loading/images/loading.gif",
+      "width": 200,
+      "height": 200
+    }
+  },
+  "wabVersion": "2.11",
+  "isTemplateApp": true,
+  "isWebTier": false,
+  "httpProxy": {
+    "useProxy": true,
+    "alwaysUseProxy": false,
+    "url": "",
+    "rules": []
+  },
+  "dataSource": {
+    "dataSources": {
+      "widget~_26~filter-Crenas_Nguigmi_WGS84_UTM33N_3": {
+        "id": "widget~_26~filter-Crenas_Nguigmi_WGS84_UTM33N_3",
+        "type": "Features",
+        "label": "Crenas_Nguigmi_WGS84_UTM33N_3",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID"
+            },
+            {
+              "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+              "type": "esriFieldTypeInteger",
+              "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1"
+            },
+            {
+              "name": "SUM_Population",
+              "type": "esriFieldTypeDouble",
+              "alias": "SUM_Population"
+            },
+            {
+              "name": "Shape_Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Length"
+            },
+            {
+              "name": "Shape_Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Area"
+            }
+          ],
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          }
+        }
+      },
+      "widget~_28~filter-Crenas_Nguigmi_WGS84_UTM33N_5": {
+        "id": "widget~_28~filter-Crenas_Nguigmi_WGS84_UTM33N_5",
+        "type": "Features",
+        "label": "Crenas_Nguigmi_WGS84_UTM33N_5",
+        "dataSchema": {
+          "geometryType": "esriGeometryPolygon",
+          "fields": [
+            {
+              "name": "OBJECTID",
+              "type": "esriFieldTypeOID",
+              "alias": "OBJECTID"
+            },
+            {
+              "name": "FID_Crenas_Nguigmi_WGS84_UTM33N_1",
+              "type": "esriFieldTypeInteger",
+              "alias": "FID_Crenas_Nguigmi_WGS84_UTM33N_1"
+            },
+            {
+              "name": "SUM_Population",
+              "type": "esriFieldTypeDouble",
+              "alias": "SUM_Population"
+            },
+            {
+              "name": "Shape_Length",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Length"
+            },
+            {
+              "name": "Shape_Area",
+              "type": "esriFieldTypeDouble",
+              "alias": "Shape_Area"
+            }
+          ],
+          "objectIdField": {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          }
+        }
+      }
+    },
+    "settings": {}
+  },
+  "logoLink": ""
+}

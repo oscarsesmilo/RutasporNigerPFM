@@ -1,0 +1,193 @@
+{
+  "name": "Model222",
+  "displayName": "AreadeServicioHospitalesPopulation3",
+  "description": "Población dentro de  un servive Area",
+  "category": "",
+  "helpUrl": "https://localhost/server/rest/directories/arcgisoutput/PFM_ServiceArea/ServiceAreaPopulation7_GPServer/PFM_ServiceArea_ServiceAreaPopulation7/Model222.htm",
+  "serverInfo": {
+    "currentVersion": 10.6,
+    "url": "https://localhost/server/rest/services/PFM_ServiceArea/ServiceAreaPopulation7/GPServer/",
+    "hasResultMapServer": true,
+    "resultMapServerName": "PFM_ServiceArea/ServiceAreaPopulation7",
+    "supportsUpload": false
+  },
+  "useResultMapServer": true,
+  "taskUrl": "https://localhost/server/rest/services/PFM_ServiceArea/ServiceAreaPopulation7/GPServer/AreadeServicioHospitalesPopulation3",
+  "isSynchronous": false,
+  "inputParams": [
+    {
+      "name": "Input_Features",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "capa de entrada",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPoint",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "PAYS",
+            "type": "esriFieldTypeString",
+            "alias": "PAYS",
+            "length": 8000
+          },
+          {
+            "name": "REGION",
+            "type": "esriFieldTypeString",
+            "alias": "REGION",
+            "length": 8000
+          },
+          {
+            "name": "DISTRICT",
+            "type": "esriFieldTypeString",
+            "alias": "DISTRICT",
+            "length": 8000
+          },
+          {
+            "name": "COMMUNE",
+            "type": "esriFieldTypeString",
+            "alias": "COMMUNE",
+            "length": 8000
+          },
+          {
+            "name": "NOM_DE_LA_STRUCTURE",
+            "type": "esriFieldTypeString",
+            "alias": "NOM DE LA STRUCTURE",
+            "length": 8000
+          },
+          {
+            "name": "Latitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Latitud"
+          },
+          {
+            "name": "Longuitud",
+            "type": "esriFieldTypeDouble",
+            "alias": "Longuitud"
+          },
+          {
+            "name": "Tratamiento_de_Malnutrición",
+            "type": "esriFieldTypeString",
+            "alias": "Tratamiento de Malnutrición",
+            "length": 8000
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Input Features",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers",
+      "tooltip": "Input Features"
+    },
+    {
+      "name": "Impedance_Attribute",
+      "dataType": "GPString",
+      "description": "Atributo de coste",
+      "defaultValue": "Tiempo_Conducción",
+      "category": "",
+      "choiceList": [
+        "Distancia",
+        "Meters",
+        "Minutes",
+        "Pedestrian",
+        "Tiempo_Conducción"
+      ],
+      "label": "Impedance Attribute",
+      "visible": true,
+      "required": true
+    },
+    {
+      "name": "Default_Break_Values",
+      "dataType": "GPString",
+      "description": "lineas de ruptura",
+      "defaultValue": "30",
+      "category": "",
+      "label": "Default Break Values",
+      "visible": true,
+      "required": false
+    }
+  ],
+  "outputParams": [
+    {
+      "name": "Facilities_CopyFeatures2_Cli2",
+      "dataType": "GPFeatureRecordSetLayer",
+      "description": "Poblacion en un service Area",
+      "defaultValue": {
+        "displayFieldName": "",
+        "geometryType": "esriGeometryPolygon",
+        "spatialReference": {
+          "wkid": 32633,
+          "latestWkid": 32633
+        },
+        "fields": [
+          {
+            "name": "OBJECTID",
+            "type": "esriFieldTypeOID",
+            "alias": "OBJECTID"
+          },
+          {
+            "name": "FID_Facilities_CopyFeatures2_Cli",
+            "type": "esriFieldTypeInteger",
+            "alias": "FID_Facilities_CopyFeatures2_Cli"
+          },
+          {
+            "name": "Name",
+            "type": "esriFieldTypeString",
+            "alias": "Name",
+            "length": 1024
+          },
+          {
+            "name": "SUM_Population",
+            "type": "esriFieldTypeDouble",
+            "alias": "SUM_Population"
+          },
+          {
+            "name": "Shape_Length",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Length"
+          },
+          {
+            "name": "Shape_Area",
+            "type": "esriFieldTypeDouble",
+            "alias": "Shape_Area"
+          }
+        ],
+        "features": [],
+        "exceededTransferLimit": false
+      },
+      "category": "",
+      "label": "Facilities_CopyFeatures2_Cli2",
+      "visible": true,
+      "required": true,
+      "featureSetMode": "layers"
+    },
+    {
+      "name": "PFM_ServiceArea/ServiceAreaPopulation7",
+      "label": "PFM_ServiceArea/ServiceAreaPopulation7",
+      "tooltip": "PFM_ServiceArea/ServiceAreaPopulation7",
+      "dataType": "MapServiceLayer",
+      "layerNames": [
+        "AreadeServicioHospitalesPopulation3",
+        "Facilities_CopyFeatures2_Cli2"
+      ],
+      "visible": true,
+      "required": ""
+    }
+  ],
+  "shareResults": true,
+  "layerOrder": [
+    "Facilities_CopyFeatures2_Cli2",
+    "Input_Features"
+  ],
+  "showExportButton": false
+}

@@ -1,0 +1,199 @@
+{
+  "bookmarks2D": [
+    {
+      "displayName": "Crenas N'Guigmi",
+      "name": "Crenas N'Guigmi",
+      "extent": {
+        "xmin": 1457619.9087351507,
+        "ymin": 1601895.4314880138,
+        "xmax": 1460199.6584398432,
+        "ymax": 1603328.6257683989,
+        "spatialReference": {
+          "wkid": 102100
+        },
+        "cache": {
+          "_parts": [
+            {
+              "extent": {
+                "xmin": 1457619.9087351507,
+                "ymin": 1601895.4314880138,
+                "xmax": 1460199.6584398432,
+                "ymax": 1603328.6257683989,
+                "spatialReference": {
+                  "wkid": 102100
+                }
+              },
+              "frameIds": [
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "thumbnail": "/webappbuilder/apps/13/widgets/Bookmark/images/thumbnail_default.png",
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "Centinelas_NigerWGS84UTM33N2_2623": {
+          "selected": true
+        },
+        "CentroSaludDiffa_WGS84_UTM33N_3777": {
+          "selected": true
+        },
+        "Administracion3Poblacion_2344": {
+          "selected": true
+        },
+        "Poblaciones_Diffa_5615": {
+          "selected": true
+        },
+        "AeropuertosPunto_WGS84_UTM33N_2381": {
+          "selected": true
+        },
+        "Crenas_Nguigmi_WGS84_UTM33N_4267": {
+          "selected": true
+        },
+        "CasaSante_Nguigmi_WGS84UTM33N_7161": {
+          "selected": true
+        },
+        "Carreteras_Niger_1_6999": {
+          "selected": true
+        }
+      },
+      "_uID": 6
+    },
+    {
+      "displayName": "Crenas Blabrime",
+      "name": "Crenas Blabrime",
+      "extent": {
+        "xmin": 1492772.3541068095,
+        "ymin": 1622699.3655113429,
+        "xmax": 1494062.2289591557,
+        "ymax": 1623415.9626515354,
+        "spatialReference": {
+          "wkid": 102100
+        },
+        "cache": {
+          "_parts": [
+            {
+              "extent": {
+                "xmin": 1492772.3541068095,
+                "ymin": 1622699.3655113429,
+                "xmax": 1494062.2289591557,
+                "ymax": 1623415.9626515354,
+                "spatialReference": {
+                  "wkid": 102100
+                }
+              },
+              "frameIds": [
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "thumbnail": "/webappbuilder/apps/13/widgets/Bookmark/images/thumbnail_default.png",
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "Centinelas_NigerWGS84UTM33N2_2623": {
+          "selected": true
+        },
+        "CentroSaludDiffa_WGS84_UTM33N_3777": {
+          "selected": true
+        },
+        "Administracion3Poblacion_2344": {
+          "selected": true
+        },
+        "Poblaciones_Diffa_5615": {
+          "selected": true
+        },
+        "AeropuertosPunto_WGS84_UTM33N_2381": {
+          "selected": true
+        },
+        "Crenas_Nguigmi_WGS84_UTM33N_4267": {
+          "selected": true
+        },
+        "CasaSante_Nguigmi_WGS84UTM33N_7161": {
+          "selected": true
+        },
+        "Carreteras_Niger_1_6999": {
+          "selected": true
+        }
+      },
+      "_uID": 7
+    },
+    {
+      "displayName": "Crenas Kabaléwa",
+      "name": "Crenas Kabaléwa",
+      "extent": {
+        "xmin": 1444302.0724764294,
+        "ymin": 1571276.9445568877,
+        "xmax": 1444624.5411895518,
+        "ymax": 1571456.0938419555,
+        "spatialReference": {
+          "wkid": 102100
+        },
+        "cache": {
+          "_parts": [
+            {
+              "extent": {
+                "xmin": 1444302.0724764294,
+                "ymin": 1571276.9445568877,
+                "xmax": 1444624.5411895518,
+                "ymax": 1571456.0938419555,
+                "spatialReference": {
+                  "wkid": 102100
+                }
+              },
+              "frameIds": [
+                0
+              ]
+            }
+          ]
+        }
+      },
+      "thumbnail": "/webappbuilder/apps/13/widgets/Bookmark/images/thumbnail_default.png",
+      "isInWebmap": false,
+      "isSaveLayers": false,
+      "layerOptions": {
+        "Centinelas_NigerWGS84UTM33N2_2623": {
+          "selected": true
+        },
+        "CentroSaludDiffa_WGS84_UTM33N_3777": {
+          "selected": true
+        },
+        "Administracion3Poblacion_2344": {
+          "selected": true
+        },
+        "Poblaciones_Diffa_5615": {
+          "selected": true
+        },
+        "AeropuertosPunto_WGS84_UTM33N_2381": {
+          "selected": true
+        },
+        "Crenas_Nguigmi_WGS84_UTM33N_4267": {
+          "selected": true
+        },
+        "CasaSante_Nguigmi_WGS84UTM33N_7161": {
+          "selected": true
+        },
+        "Carreteras_Niger_1_6999": {
+          "selected": true
+        }
+      },
+      "_uID": 8
+    }
+  ],
+  "bookmarks3D": [],
+  "layout": {
+    "cards": true,
+    "list": false,
+    "defaultMode": "cards"
+  },
+  "editable": true,
+  "syncMode": {
+    "webmap": true,
+    "custom": true
+  },
+  "isSaveLayerVisibility": false
+}
